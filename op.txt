@@ -43,3 +43,48 @@ PLAY RECAP *********************************************************************
 192.168.122.173            : ok=0    changed=0    unreachable=0    failed=1   
 192.168.122.227            : ok=2    changed=1    unreachable=0    failed=0   
 
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [192.168.122.173]: FAILED! => {"failed": true, "msg": "winrm or requests is not installed: No module named winrm"}
+ok: [192.168.122.227]
+
+TASK [command] *****************************************************************
+changed: [192.168.122.227]
+	to retry, use: --limit @/root/playbook/test1.retry
+
+PLAY RECAP *********************************************************************
+192.168.122.173            : ok=0    changed=0    unreachable=0    failed=1   
+192.168.122.227            : ok=2    changed=1    unreachable=0    failed=0   
+
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [192.168.122.173]: FAILED! => {"failed": true, "msg": "winrm or requests is not installed: No module named winrm"}
+ok: [192.168.122.227]
+
+TASK [command] *****************************************************************
+changed: [192.168.122.227]
+	to retry, use: --limit @/root/playbook/test1.retry
+
+PLAY RECAP *********************************************************************
+192.168.122.173            : ok=0    changed=0    unreachable=0    failed=1   
+192.168.122.227            : ok=2    changed=1    unreachable=0    failed=0   
+
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [192.168.122.173]: FAILED! => {"failed": true, "msg": "winrm or requests is not installed: No module named winrm"}
+ok: [192.168.122.227]
+
+TASK [command] *****************************************************************
+changed: [192.168.122.227]
+	to retry, use: --limit @/root/playbook/test1.retry
+
+PLAY RECAP *********************************************************************
+192.168.122.173            : ok=0    changed=0    unreachable=0    failed=1   
+192.168.122.227            : ok=2    changed=1    unreachable=0    failed=0   
+
